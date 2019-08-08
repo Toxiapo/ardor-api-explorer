@@ -1,0 +1,23 @@
+footer { 
+  position: fixed;
+  bottom:0;
+  width: 100%;
+  min-height: 100px;
+  background:#1B63A3;
+  padding: 1.5vh;
+  color: #ffff;
+  text-align: center;
+  font-size: 1.25rem;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-content: space-around;
+  grid-row-gap: 15px;
+}
+
+@media (max-width: 820px) { 
+  footer {
+    position: relative;
+    grid-template-columns: 1fr 1fr;
+  } 
+}

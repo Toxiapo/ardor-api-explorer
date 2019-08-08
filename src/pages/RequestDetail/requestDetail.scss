@@ -1,0 +1,83 @@
+.detail-container {
+  overflow: auto;
+  position: relative;
+}
+
+#back-btn {
+  position: absolute;
+  top: 5px;
+  left: 15px;
+  z-index: 1;
+}
+
+#fields {
+  position: relative; 
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  width: 50%;
+  padding: 15px;
+  margin: 35px auto;
+
+  .field { 
+    padding: 5px; 
+
+    * {
+      display: block;
+      width: 100%;
+    }
+
+    input {
+      border: 1px solid rgba(0,0,0,0.2);
+      padding: 5px;
+      border-radius: 5px;
+    }
+  }
+
+  button {
+    display: block;
+    width: 100px;
+    margin: auto;
+    padding: 15px;
+    background: #1B63A3;
+    color: #ffffff; 
+    outline: none;
+    cursor: pointer;
+  }
+
+  button:hover { 
+    background: #000000;
+    color:#ffffff;
+  } 
+}
+
+pre {
+  position: relative;
+  width: 70%;
+  margin: auto;
+  background: rgba(0,0,0,0.1);
+  padding: 30px 15px 15px 15px;
+  border-radius: 5px;
+  overflow: auto;
+
+  a {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    background: #ffffff;
+    border: 0;
+    border-radius: 5px;
+    height: 30px;
+  }
+}
+
+#error {
+  text-align: center;
+  color: #ff0000;
+  padding: 50px;
+  font-size: 2rem;
+}
+
+@media(max-width: 480px) { 
+  #fields {
+    width: 100%;
+  } 
+}

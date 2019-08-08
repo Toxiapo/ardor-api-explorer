@@ -1,0 +1,49 @@
+nav {
+  width:100%;
+  background: #1B63A3;
+  padding: 2vh;
+  text-align: left;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #ffffff;
+
+  .logo { 
+    display: none;
+  }
+
+  a {
+    color: #ffffff;
+    
+    &:hover {
+      opacity: 0.5;
+    }
+  } 
+
+  .list-btn { 
+    font-size: 1rem;
+    border: 0;
+    margin-left: 15px;
+    font-weight: normal;
+  }
+
+  .doc-btn {
+    float: right;
+    font-size: 1rem;
+    border: 0;
+  }
+
+}
+
+@media(max-width: 400px) {
+  nav .logo {
+    display: inline-block;
+  }
+
+  nav .title {
+    display: none;
+  }
+
+  nav .doc-btn {
+    float: unset;
+  }
+}

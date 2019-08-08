@@ -1,0 +1,60 @@
+.content { 
+  text-align:center;
+  padding: 5vh 10vw; 
+  max-width: 1200px;
+  margin: auto;
+
+  input {
+    margin: 15px;
+    padding: 15px;  
+    font-size: 1.5rem;
+    border-radius: 5px;
+    border: 1px solid;
+    outline: none;
+  }
+
+  input[name="requestType"] {
+    min-width: 35vw;
+    border: 2px solid #cecece;
+    &:hover{ 
+      border-color: #1B63A3;
+    }
+  } 
+  input[type="submit"] {
+    background: #1B63A3;
+    color: #ffffff;
+    cursor: pointer;
+    &:hover {
+      background: #000000;
+    }
+  }
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+.popular { 
+  text-align: center;
+  width: 80%;
+  margin:auto;
+
+  .label {
+    font-weight: bold;
+    display:block;
+  }
+
+  .item { 
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+    background: #cecece;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .item:hover {
+    background: #000000;
+    color: #ffffff;
+  }
+}
