@@ -12,7 +12,7 @@ class RequestDetail extends Component {
     super(props);
 
     const path = props.location.pathname;
-    const request = path.split('/')[2];
+    const request = path.split('/').pop();
     const apiExist = RequestList.hasOwnProperty(request);
 
     this.state = {
