@@ -1,0 +1,30 @@
+.content { 
+  text-align:center;
+  padding: 5vh 10vw; 
+  max-width: 1200px;
+  margin: auto; 
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+.popular { 
+  text-align: center;
+  width: 80%;
+  margin:auto;
+
+  .item { 
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+    background: #cecece;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .item:hover {
+    background: #000000;
+    color: #ffffff;
+  }
+}

@@ -67,12 +67,22 @@ class RequestDetail extends Component {
         this.setState({
           httpResponse: JSON.stringify(response.data, undefined, 2),
           url
-        });
-
-        window.scrollTo(0, this.preRef.current.offsetTop);
+        }); 
+        window.scrollTo(0, this.preRef.current.offsetTop); 
       }
     } catch (error) {
       console.log(error)
+    } finally {
+      let recents = localStorage.getItem('recent') || {}; 
+      try {
+        recents = JSON.parse(recents); 
+      } catch (error) { 
+        // console.error('Empty or Invalid data format');
+      }
+
+      recents[request] = recents[request] === undefined ? 0 : recents[request] + 1;
+      let sortByCounter = Object.fromEntries(Object.entries(recents).sort((a,b) => b[1] - a[1]));
+      localStorage.setItem('recent', JSON.stringify(sortByCounter));
     }
   }
 
